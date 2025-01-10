@@ -1,0 +1,196 @@
+INFO2025-01-10 22:25:23,320admin
+INFO2025-01-10 22:25:23,320Validating id number
+INFO2025-01-10 22:25:23,328"POST /api/validator HTTP/1.1" 200 5621
+INFO2025-01-10 22:26:00,577/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py changed, reloading.
+INFO2025-01-10 22:26:01,321Watching for file changes with StatReloader
+ERROR2025-01-10 22:26:12,638Internal Server Error: /api/validator
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django_ratelimit/decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py", line 30, in validate_id
+    logger.info(request.user+"here")
+                ~~~~~~~~~~~~^~~~~~~
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+TypeError: unsupported operand type(s) for +: 'User' and 'str'
+ERROR2025-01-10 22:26:12,642"POST /api/validator HTTP/1.1" 500 102122
+INFO2025-01-10 22:26:56,152/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py changed, reloading.
+INFO2025-01-10 22:26:57,008Watching for file changes with StatReloader
+WARNING2025-01-10 22:26:59,877Method Not Allowed: /api/validator
+WARNING2025-01-10 22:26:59,877"GET /api/validator HTTP/1.1" 405 5616
+ERROR2025-01-10 22:27:08,632Internal Server Error: /api/validator
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django_ratelimit/decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py", line 30, in validate_id
+    logger.info((request.user)+"here")
+                ~~~~~~~~~~~~~~^~~~~~~
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+TypeError: unsupported operand type(s) for +: 'User' and 'str'
+ERROR2025-01-10 22:27:08,635"POST /api/validator HTTP/1.1" 500 102137
+INFO2025-01-10 22:27:13,858/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py changed, reloading.
+INFO2025-01-10 22:27:14,632Watching for file changes with StatReloader
+WARNING2025-01-10 22:27:17,197Method Not Allowed: /api/validator
+WARNING2025-01-10 22:27:17,197"GET /api/validator HTTP/1.1" 405 5616
+ERROR2025-01-10 22:27:27,781Internal Server Error: /api/validator
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django_ratelimit/decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py", line 30, in validate_id
+    logger.info(print(request.user)+"here")
+                ~~~~~~~~~~~~~~~~~~~^~~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+ERROR2025-01-10 22:27:27,784"POST /api/validator HTTP/1.1" 500 98219
+INFO2025-01-10 22:27:52,928/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py changed, reloading.
+INFO2025-01-10 22:27:53,704Watching for file changes with StatReloader
+WARNING2025-01-10 22:27:57,968Method Not Allowed: /api/validator
+WARNING2025-01-10 22:27:57,969"GET /api/validator HTTP/1.1" 405 5616
+ERROR2025-01-10 22:28:07,795Internal Server Error: /api/validator
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django_ratelimit/decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py", line 30, in validate_id
+    logger.info(request.user.data+"here")
+                ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'User' object has no attribute 'data'
+ERROR2025-01-10 22:28:07,798"POST /api/validator HTTP/1.1" 500 102095
+INFO2025-01-10 22:28:26,004/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py changed, reloading.
+INFO2025-01-10 22:28:26,801Watching for file changes with StatReloader
+WARNING2025-01-10 22:28:28,050Method Not Allowed: /api/validator
+WARNING2025-01-10 22:28:28,050"GET /api/validator HTTP/1.1" 405 5616
+WARNING2025-01-10 22:28:40,226Bad Request: /api/validator
+WARNING2025-01-10 22:28:40,227"POST /api/validator HTTP/1.1" 400 3723
+INFO2025-01-10 22:29:06,114/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py changed, reloading.
+INFO2025-01-10 22:29:06,615Watching for file changes with StatReloader
+WARNING2025-01-10 22:32:37,092Method Not Allowed: /api/validator
+WARNING2025-01-10 22:32:37,093"GET /api/validator HTTP/1.1" 405 5616
+INFO2025-01-10 22:33:24,838/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py changed, reloading.
+INFO2025-01-10 22:33:25,577Watching for file changes with StatReloader
+ERROR2025-01-10 22:33:33,557Internal Server Error: /api/validator
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django_ratelimit/decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py", line 30, in validate_id
+    logger.info((request.user.value)+"here")
+                 ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'User' object has no attribute 'value'
+ERROR2025-01-10 22:33:33,562"POST /api/validator HTTP/1.1" 500 102118
+INFO2025-01-10 22:39:41,653/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py changed, reloading.
+INFO2025-01-10 22:39:42,411Watching for file changes with StatReloader
+INFO2025-01-10 22:39:54,178/Users/fatemaelnashar/Desktop/IDValidator/idvalidator/api/views.py changed, reloading.
+INFO2025-01-10 22:39:54,837Watching for file changes with StatReloader
+WARNING2025-01-10 22:40:00,108Method Not Allowed: /api/validator
+WARNING2025-01-10 22:40:00,109"GET /api/validator HTTP/1.1" 405 5616
+INFO2025-01-10 22:40:11,598admin
+INFO2025-01-10 22:40:11,607User visit counts incremented
+INFO2025-01-10 22:40:11,607Validating id number
+WARNING2025-01-10 22:40:11,611Bad Request: /api/validator
+WARNING2025-01-10 22:40:11,612"POST /api/validator HTTP/1.1" 400 5638
+INFO2025-01-10 23:01:43,114Watching for file changes with StatReloader
+WARNING2025-01-10 23:01:50,587Method Not Allowed: /api/validator
+WARNING2025-01-10 23:01:50,588"GET /api/validator HTTP/1.1" 405 5616

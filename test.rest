@@ -1,0 +1,123 @@
+############Testing Unauthanticated############
+POST http://127.0.0.1:8000/api/validator
+Content-Type: application/json
+{
+    "number":"28903170200808"
+}
+
+
+
+############GET Token for Admin############
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+{
+    "username":"admin",
+    "password":"admin"
+}
+
+
+
+############GET Token for Admin2############
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+{
+    "username":"admin2",
+    "password":"admin2"
+}
+
+
+
+############Token Authentication Admin############
+POST http://127.0.0.1:8000/api/validator
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NTQzNDI5LCJpYXQiOjE3MzY1NDMxMjksImp0aSI6ImQ3MmQyOGQwZjg1OTQ5ZmRhMjViNmI4YjQxYjhkMmVmIiwidXNlcl9pZCI6MX0.udv_QRuRVARBd_wQeJHmQrLixQQEkOZTYf548kncibM
+{
+    "number":"28903170200808"
+}
+
+
+
+
+############Token Authentication Admin2############
+POST http://127.0.0.1:8000/api/validator
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NTQxODczLCJpYXQiOjE3MzY1NDE1NzMsImp0aSI6IjIzNGFlNjk1YTVmZTQ1YjJhZWEyNzhkOGM2ZGVjMjc1IiwidXNlcl9pZCI6Mn0.i4qBWVpXWdn24x2eE_GMJSd5Jbke9TCz0qS7D0tQb7Y
+{
+    "number":"28903170200808"
+}
+
+
+############Basic Authentication for Simplicity############
+
+
+
+############Test Less than 14 chars############
+POST http://127.0.0.1:8000/api/validator
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+{
+    "number":"289170200808"
+}
+
+
+
+############Test More than 14 chars############
+POST http://127.0.0.1:8000/api/validator
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+{
+    "number":"28917033333200808"
+}
+
+
+
+
+############Test wrong month format############
+POST http://127.0.0.1:8000/api/validator
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+{
+    "number":"28917430200808"
+}
+
+
+
+############Test wrong day format (31 days for FEB)############
+POST http://127.0.0.1:8000/api/validator
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+{
+    "number":"28931020200808"
+}
+
+
+
+
+#################TESTING TRACKING USER VISITS#################
+
+############Basic admin request ############
+POST http://127.0.0.1:8000/api/validator
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+{
+    "number":"28903170200808"
+}
+
+
+
+############BASIC Admin2 request############
+POST http://127.0.0.1:8000/api/validator
+Content-Type: application/json
+Authorization: Basic YWRtaW4yOmFkbWluMg==
+{
+    "number":"28903170200808"
+}
+
+
+
+############GET API Visits############
+GET  http://127.0.0.1:8000/api/visits
+Content-Type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
